@@ -4,6 +4,7 @@
 */
 #include<bits/stdc++.h>
 #define int long long int
+#define endl "\n"
 using namespace std;
 
 void solve(int test) {
