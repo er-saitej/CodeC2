@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 int main() {
@@ -7,5 +7,9 @@ int main() {
         freopen("output.txt", "w", stdout);
         freopen("error.txt", "w", stderr);
     #endif
+    int n;
+    cin>>n;
+    cout<<n;
+    cerr<<n;
     return 0;
 }
