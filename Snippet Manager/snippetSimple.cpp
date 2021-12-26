@@ -1,25 +1,21 @@
 #include<bits/stdc++.h>
-#include<algorithm>
-#include<vector>
-#include<stack>
-#include<queue>
-#define int long long int;
+#define int long long int
 using namespace std;
 
-void solve() {
-    
+void solve(int test) {
+    cout<<test<<endl;
 }
 
 int32_t main() {
     clock_t initialTime = clock();
     #ifndef ONLINE_JUDGE
-        freopen("input", "r", stdin);
-        freopen("output.txt", "w", stdout);
+        freopen("input.txt", "r", stdin);
         freopen("error.txt", "w", stderr);
+        freopen("output.txt", "w", stdout);
     #endif
-    int32_t test;
+    int test;
     cin>>test;
-    while(test--) solve();
+    while(test--) solve(INT_MAX);
     cerr<< ((double)clock() - initialTime)/CLOCKS_PER_SEC;
     return 0;
 }
