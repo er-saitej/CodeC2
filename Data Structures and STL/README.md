@@ -5,4 +5,4 @@
 ### Associative Containers - Set, map, multiset, multimap
 
 #### Set - Uses balanced tree to implement functionality - Stores unique elements in it.
-#### Map - Uses hashing to implement functionality - Contains keys and corresponding values.
+#### Map - Uses hashing and balanced tree to implement functionality - Contains keys and corresponding values.
