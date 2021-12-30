@@ -1,4 +1,15 @@
-6 7 5 3 10 3 
-6 7 5 3 10 3 
-12 7 5 3 10 3 
-3 3 5 7 10 12 
+Displaying vector
+20 20 20 20 
+Displaying vector
+20 20 20 20 6 7 5 3 10 3 
+Size and capacity: 10 16
+Displaying vector
+20 20 20 20 6 7 5 3 10 3 20 15 2 
+Size and capacity: 13 16
+Displaying vector
+2 3 3 5 6 7 10 15 20 20 20 20 20 
+Show and Pop
+20 20 20 20 20 15 10 7 6 5 3 3 2 
+Displaying vector
+
+Size and capacity: 0 16
