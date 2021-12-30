@@ -10,6 +10,7 @@ Size and capacity: 9 16
 Displaying vector
 2 3 3 5 6 7 10 15 20 
 Show and Pop
+2
 20 15 10 7 6 5 3 3 2 
 Displaying vector
 

@@ -21,6 +21,7 @@ void displayVector(vector<int> &vector) {
 
 void popAndClearVector(vector<int> &vector) {
     cout<< "Show and Pop"<< endl;
+    cout<<vector.front()<<endl;
     for(auto x: vector) {
         cout<< vector.back()<< " ";
         vector.pop_back();
