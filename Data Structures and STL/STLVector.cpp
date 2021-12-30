@@ -1,6 +1,10 @@
 /*
     author: Sai Tej Sunkara
     language: C++ Advanced (clang++ 13.x)
+    Methods:
+        When pushing an element into vector, it takes constant time.
+        When doubling of vector takes place, it takes linear time. - expensive operation. So, we use reserve to reserve some space and work on a vector [possibly to avoid expensive operation].
+        
 */
 #include<bits/stdc++.h>
 #define int long long int
@@ -25,7 +29,8 @@ void popAndClearVector(vector<int> &vector) {
 }
 
 void solve() {
-    vector<int> vector(4, 20);
+    vector<int> vector;
+    cout<< "Size and capacity: "<<vector.size()<< " "<< vector.capacity()<< endl;
     displayVector(vector);
     for(int i=0;i<6;i++) {
         int value;
