@@ -1,9 +1,6 @@
-Displaying deque
-3 10 3 5 7 6 6 7 5 3 10 3 
-Size of deque 12 
-Displaying deque
-3 10 3 5 7 6 6 7 5 3 10 
-Size of deque 11 
-Displaying deque
-10 3 5 7 6 6 7 5 3 10 
-Size of deque 10 
+3 6
+10 5
+3 4
+5 3
+7 2
+6 1
