@@ -8,9 +8,17 @@
 #define endl "\n"
 using namespace std;
 
+class Compare{
+    public: 
+    bool operator()(int a, int b) {
+        return a>b; // For min heap | Custom comparator
+    }
+};
+
 void solve() {
     priority_queue<int> heap; // is max heap
     // priority_queue < int, vector<int>, greater<int> > heap; // is min heap
+    // priority_queue < int, vector<int>, Compare > heap; // Defining with custom comparator
     for(int i=0;i<6;i++) {
         int n;
         cin>>n;
