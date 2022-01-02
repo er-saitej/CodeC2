@@ -14,6 +14,13 @@
 #define endl "\n"
 using namespace std;
 
+void displayMap(unordered_map<string, string> &map) {
+    for(pair<string, string> x:map) {
+        cout<<x.first<<" "<<x.second<<endl;
+    }
+    cout<<endl;
+}
+
 void solve() {
     unordered_map<string, string> map;
     for(int i=0;i<5;i++) {
@@ -27,8 +34,13 @@ void solve() {
     if(map.count("Map1")) cout<<"Item is present"; // Will return 1 if key is present in the hashtable | Or it will return 0
     else cout<<"Item is not present";
     cout<<endl;
-    cout<<map["Map9"]<<endl;
-    if(map["Map9"]=="") cout<<"Empty is printed"<<endl;
+    // cout<<map["Map9"]<<endl;
+    // if(map["Map9"]=="") cout<<"Empty is printed"<<endl;
+    map["Map3"] = "Special Map";
+    cout<<map["Map3"]<<endl<<endl;
+    displayMap(map);
+    map.erase("Map3");
+    displayMap(map);
 }
 
 int32_t main() {
