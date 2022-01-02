@@ -27,14 +27,14 @@ void solve() {
     int left = 0;
     int right = vec.size()-1;
     while(left<=right) {
+        if(vec.at(left)+vec.at(right) == k) {
+            cout<<left<<right<<endl;
+        }
         if(vec.at(left)+vec.at(right) > k) {
             left++;
         }
         else {
             right--;
-        }
-        if(vec.at(left)+vec.at(right) == k) {
-            cout<<left<<right<<endl;
         }
     }
     // Traversing an array - O(N)
