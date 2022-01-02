@@ -15,7 +15,7 @@
 using namespace std;
 
 void displayMap(unordered_map<string, string> &map) {
-    for(pair<string, string> x:map) {
+    for(pair<string, string> x:map) { // O(N)
         cout<<x.first<<" "<<x.second<<endl;
     }
     cout<<endl;
