@@ -1,1 +1,4 @@
-10 7 6 5 3 3 
+1Val
+Item is present
+
+Empty is printed
