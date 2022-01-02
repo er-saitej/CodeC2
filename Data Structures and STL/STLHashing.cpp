@@ -2,6 +2,7 @@
     author: Sai Tej Sunkara
     language: C++ Advanced (clang++ 13.x)
     Methods:
+    ** Hashing will be done in separate chaining
         Hashtable insertion - O(1)
         Search Operation - O(1)
         Erase Operation - O(1) - will delete key value pair inside the hash table
@@ -22,6 +23,7 @@ void displayMap(unordered_map<string, string> &map) {
 }
 
 void solve() {
+    // map<string, string> map; // All O(1) queries becomes as O(log N) since it uses binary search balanced trees. Keys are sorted in lexicographic order.
     unordered_map<string, string> map;
     for(int i=0;i<5;i++) {
         string key;
