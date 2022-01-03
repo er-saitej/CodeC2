@@ -7,29 +7,30 @@
 #define endl "\n"
 using namespace std;
 
-void solve(int test) {
+void solve() {
     vector<int> nums;
-    int k = 4;
-    int n;
-    for(int i=0;i<9;i++) {
+    nums.reserve(5);
+    for(int i=0;i<5;i++) {
+        int n;
         cin>>n;
         nums.push_back(n);
     }
-    priority_queue<int, vector<int>, greater<int> > pq;
-    set<int> results;
-    vector<int> actualResults;
+    int p1;
+    int p2;
+    multiset<int> set;
     for(auto x: nums) {
-        pq.push(x);
+        set.insert(x);
     }
-    while(!pq.empty()) {
-        results.insert(pq.top());
-        pq.pop();
+    int result = 0;
+    while(set.size() != 1) {
+        p1 = *set.begin();
+        set.erase(set.begin());
+        p2 = *set.begin();
+        set.erase(set.begin());
+        set.insert(p1+p2);
+        result = result + p1 + p2;
     }
-    actualResults.reserve(results.size());
-    for(auto x:results) {
-        actualResults.push_back(x);
-    }
-    cout<<endl<<actualResults[k-1];
+    cout<<result;
 }
 
 int32_t main() {
@@ -42,7 +43,7 @@ int32_t main() {
     #endif
     int test;
     cin>>test;
-    while(test--) solve(INT_MAX);
+    while(test--) solve();
     cerr<< ((double)clock() - initialTime)/CLOCKS_PER_SEC;
     return 0;
 }
