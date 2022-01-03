@@ -20,6 +20,11 @@ void solve() {
     for(multiset<string>::iterator it = set.begin(); it!= set.end(); it++) { // Iterator traverse through address locations
         cout<<*it<<" ";
     }
+    cout<<endl;
+    set.erase("apple");
+    for(multiset<string>::iterator it = set.begin(); it != set.end(); it++) {
+        cout<<*it<<" ";
+    }
 }
 
 int32_t main() {
