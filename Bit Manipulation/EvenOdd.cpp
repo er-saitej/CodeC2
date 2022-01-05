@@ -1,14 +1,24 @@
 /*
     author: Sai Tej Sunkara
     language: C++ Advanced (clang++ 13.x)
+    Methods:
+        To check even or odd, we use bitwise operators.
+        Even number will have last bit 0 and odd number will have last bit 1 always.
 */
 #include<bits/stdc++.h>
 #define int long long int
 #define endl "\n"
 using namespace std;
 
-void solve(int test) {
-    cout<<(5>>3); // 20
+void solve() {
+    int number;
+    cin>>number;
+    if(number&1==1) {
+        cout<<"Odd";
+    }
+    else {
+        cout<<"Even";
+    }
 }
 
 int32_t main() {
@@ -21,7 +31,7 @@ int32_t main() {
     #endif
     int test;
     cin>>test;
-    while(test--) solve(INT_MAX);
+    while(test--) solve();
     cerr<< ((double)clock() - initialTime)/CLOCKS_PER_SEC;
     return 0;
 }
