@@ -26,10 +26,7 @@
 5|7 = 000101 | 000111 = 000111 - so equals to 7\
 5^7 = 000101 ^ 000111 = 000010 - so equals to 2\
 ~5 = ~000101 = 111010 - but puts in 2's compliment 000110 - so equals to -6\
-~0 = ~000000 = 111111 - but puts in 2's compliment 000001- so equals to -1.\
-\
-\
-\
+~0 = ~000000 = 111111 - but puts in 2's compliment 000001- so equals to -1.
 ### Binary Left Shift
 5<<2 - 0000101 - everything moves by factor of 2\
 <<00>> will fall <<00101>> moves left by 2 <<00>> add 2 0's in the last\

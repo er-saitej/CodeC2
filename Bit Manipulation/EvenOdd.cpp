@@ -13,7 +13,7 @@ using namespace std;
 void solve() {
     int number;
     cin>>number;
-    if(number&1==1) {
+    if(number&1) {
         cout<<"Odd";
     }
     else {
