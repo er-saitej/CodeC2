@@ -20,6 +20,19 @@ int inverseIthBit(int number, int bit) {
     return number^check;
 }
 
+int clearIthBit(int number, int bit) {
+    int check=1;
+    if(bit>0) check = 1<<(bit-1);
+    check = ~check;
+    return number&check;
+}
+
+int setIthBit(int number, int bit) {
+    int check=1;
+    if(bit>0) check = 1<<(bit-1);
+    return number|check;
+}
+
 int32_t main() {
     ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
     clock_t initialTime = clock();
@@ -37,6 +50,8 @@ int32_t main() {
     while(test--) {
         cout<<"Getting Ith Bit: "<<getIthBit(number, bit)<<endl;
         cout<<"Inversing Ith Bit: "<<inverseIthBit(number, bit)<<endl;
+        cout<<"Clearing Ith Bit: "<<clearIthBit(number, bit)<<endl;
+        cout<<"Setting Ith Bit: "<<setIthBit(number, 3)<<endl;
     }
     cerr<< ((double)clock() - initialTime)/CLOCKS_PER_SEC;
     return 0;
