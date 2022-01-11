@@ -1,5 +1,1 @@
-Getting Ith Bit: 1
-Inversing Ith Bit: 3
-Clearing Ith Bit: 3
-Setting Ith Bit: 15
-Updating Ith Bit: 15
+8
